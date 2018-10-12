@@ -21,7 +21,7 @@ public class Location implements Parcelable
     private String state;
     @SerializedName("postcode")
     @Expose
-    private Integer postcode;
+    private String postcode;
     @SerializedName("coordinates")
     @Expose
     private Coordinates coordinates;
@@ -49,7 +49,7 @@ public class Location implements Parcelable
         this.street = ((String) in.readValue((String.class.getClassLoader())));
         this.city = ((String) in.readValue((String.class.getClassLoader())));
         this.state = ((String) in.readValue((String.class.getClassLoader())));
-        this.postcode = ((Integer) in.readValue((Integer.class.getClassLoader())));
+        this.postcode = ((String) in.readValue((Integer.class.getClassLoader())));
         this.coordinates = ((Coordinates) in.readValue((Coordinates.class.getClassLoader())));
         this.timezone = ((Timezone) in.readValue((Timezone.class.getClassLoader())));
     }
@@ -81,11 +81,11 @@ public class Location implements Parcelable
         this.state = state;
     }
 
-    public Integer getPostcode() {
+    public String getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(Integer postcode) {
+    public void setPostcode(String postcode) {
         this.postcode = postcode;
     }
 
