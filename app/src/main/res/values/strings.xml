@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Retrofit</string>
+    <string name="app_name">Random User</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="email">email</string>
+    <string name="phone">Phone</string>
+    <string name="nationality">Nationality</string>
+    <string name="address">Address</string>
 </resources>
